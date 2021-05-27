@@ -1,19 +1,27 @@
 <?php 
-    $errors = [];
-    if (isset($_POST['who']) && isset($_POST['who'])) {
-        $email = trim($_POST['who']);
+    session_start();
+    if (isset($_POST['email']) && isset($_POST['pass'])) {
+        $email = trim($_POST['email']);
         $password = trim($_POST['pass']);
         if ($email == "" || $password == "" ) {
-            array_push($errors , "Email and password are required.");
+            $_SESSION['error'] = "Email and password are required.";
+            header("Location: login.php");
+            return;
         } elseif (strpos($email, "@") === false) {
-            array_push($errors , "Email needs to have '@' sign.");
+            $_SESSION['error'] = "Email needs to have '@' sign.";
+            header("Location: login.php");
+            return;
         } elseif (hash('md5',$password) !== "218140990315bb39d948a523d61549b4") {
-            array_push($errors, "Incorrect password");
+            $_SESSION['error'] = "Incorrect password"; 
             $check = hash('md5',$password);
             error_log("Login fail $email $check");
+            header("Location: login.php");
+            return;
         } else {
             error_log("Login success $email");
-            header("Location: autos.php?name=".urlencode($_POST['email']));
+            $_SESSION['name'] = $email;
+            header("Location: view.php");
+            return;
         }
     }
 ?>
@@ -37,17 +45,13 @@
             <h1 class="text-3xl font-medium">Welcome</h1>
             <p class="text-sm mb-5">Please login to continue</p>
             <?php 
-                if ($errors) {
-                    $lastIdx = sizeof($errors)-1;
-                    echo "
-                        <div class='my-4 text-red-600 border text-center py-3 text-sm'>
-                            $errors[$lastIdx]
-                        </div>
-                    ";
+                if ( isset($_SESSION['error']) ) {
+                    echo('<div class="my-4 text-red-600 border text-center py-3 text-sm">'.htmlentities($_SESSION['error'])."</div>\n");
+                    unset($_SESSION['error']);
                 }
             ?>
             <form action="login.php" method="POST" class="space-y-5 mt-5">
-                <input type="text" class="w-full h-12 border border-gray-800 rounded px-3" name="who"
+                <input type="text" class="w-full h-12 border border-gray-800 rounded px-3" name="email"
                     placeholder="Email" />
                 <input class="w-full h-12 border border-gray-800 rounded px-3" name="pass" placeholder="Password" />
                 <button type="submit"

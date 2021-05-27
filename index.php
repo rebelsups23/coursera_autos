@@ -16,7 +16,11 @@
         <a class="text-blue-500" href="login.php">Please Log In</a>
 
         <p class="mt-10">
-            Can you access <a class="text-blue-500" href="autos.php">autos</a> database without logging in? Give it a
+            Can you view data of <a class="text-blue-500" href="view.php">autos</a> database without logging in? Give it a
+            try.
+        </p>
+        <p class="mt-2">
+            Can you add data to <a class="text-blue-500" href="add.php">autos</a> database without logging in? Give it a
             try.
         </p>
     </div>

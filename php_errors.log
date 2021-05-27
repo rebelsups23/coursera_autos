@@ -1,25 +1,18 @@
-[18-May-2021 19:57:31 Asia/Katmandu] Login fail nice@nice.com adcd86db04d1130046681a4ae71f8a4a
-[18-May-2021 19:57:49 Asia/Katmandu] Login success nice@nice.com
-[18-May-2021 20:00:16 Asia/Katmandu] Login success nice@nice.com
-[19-May-2021 11:39:57 Asia/Katmandu] Login success nice@nice.com
-[19-May-2021 13:30:46 Asia/Katmandu] Login success nice@nice.com
-[19-May-2021 13:45:13 Asia/Katmandu] Login fail umsi@umich.edu da6523a488577c99148969e5841908ae
-[19-May-2021 13:45:14 Asia/Katmandu] Login success umsi@umich.edu
-[19-May-2021 13:45:14 Asia/Katmandu] PHP Notice:  Undefined index: email in /var/www/html/login.php on line 16
-[19-May-2021 13:46:04 Asia/Katmandu] Login fail umsi@umich.edu da6523a488577c99148969e5841908ae
-[19-May-2021 13:46:04 Asia/Katmandu] Login success umsi@umich.edu
-[19-May-2021 13:46:04 Asia/Katmandu] PHP Notice:  Undefined index: email in /var/www/html/login.php on line 16
-[19-May-2021 13:46:54 Asia/Katmandu] Login fail umsi@umich.edu da6523a488577c99148969e5841908ae
-[19-May-2021 13:46:54 Asia/Katmandu] Login success umsi@umich.edu
-[19-May-2021 13:46:54 Asia/Katmandu] PHP Notice:  Undefined index: email in /var/www/html/login.php on line 16
-[19-May-2021 13:51:18 Asia/Katmandu] Login fail umsi@umich.edu da6523a488577c99148969e5841908ae
-[19-May-2021 13:51:18 Asia/Katmandu] Login success umsi@umich.edu
-[19-May-2021 13:51:18 Asia/Katmandu] PHP Notice:  Undefined index: email in /var/www/html/login.php on line 16
-[19-May-2021 13:53:59 Asia/Katmandu] Login success nice@nice.com
-[19-May-2021 13:53:59 Asia/Katmandu] PHP Notice:  Undefined index: email in /var/www/html/login.php on line 16
-[19-May-2021 13:54:24 Asia/Katmandu] Login fail umsi@umich.edu da6523a488577c99148969e5841908ae
-[19-May-2021 13:54:25 Asia/Katmandu] Login success umsi@umich.edu
-[19-May-2021 13:54:25 Asia/Katmandu] PHP Notice:  Undefined index: email in /var/www/html/login.php on line 16
-[19-May-2021 13:56:03 Asia/Katmandu] Login fail umsi@umich.edu da6523a488577c99148969e5841908ae
-[19-May-2021 13:56:03 Asia/Katmandu] Login success umsi@umich.edu
-[19-May-2021 13:56:03 Asia/Katmandu] PHP Notice:  Undefined index: email in /var/www/html/login.php on line 16
+[27-May-2021 13:21:55 UTC] Login fail name@email.com d4188c9f289cef7d34fe23b092c47c32
+[27-May-2021 13:22:30 UTC] Login success name@email.com
+[27-May-2021 13:31:33 UTC] PHP Warning:  Undefined array key "who" in /home/sups/public_html/coursera_autos/login.php on line 4
+[27-May-2021 13:31:34 UTC] PHP Warning:  Undefined array key "who" in /home/sups/public_html/coursera_autos/login.php on line 4
+[27-May-2021 13:33:03 UTC] PHP Warning:  Undefined array key "who" in /home/sups/public_html/coursera_autos/login.php on line 4
+[27-May-2021 13:33:04 UTC] PHP Warning:  Undefined array key "who" in /home/sups/public_html/coursera_autos/login.php on line 4
+[27-May-2021 13:34:09 UTC] PHP Warning:  Undefined array key "who" in /home/sups/public_html/coursera_autos/login.php on line 4
+[27-May-2021 13:34:24 UTC] PHP Warning:  Undefined array key "who" in /home/sups/public_html/coursera_autos/login.php on line 4
+[27-May-2021 13:34:47 UTC] PHP Warning:  Undefined array key "who" in /home/sups/public_html/coursera_autos/login.php on line 4
+[27-May-2021 13:35:11 UTC] Login fail umsi@umich.edu da6523a488577c99148969e5841908ae
+[27-May-2021 13:35:12 UTC] Login success umsi@umich.edu
+[27-May-2021 13:35:54 UTC] Login fail umsi@umich.edu da6523a488577c99148969e5841908ae
+[27-May-2021 13:35:55 UTC] Login success umsi@umich.edu
+[27-May-2021 13:37:20 UTC] Login fail umsi@umich.edu da6523a488577c99148969e5841908ae
+[27-May-2021 13:37:21 UTC] Login success umsi@umich.edu
+[27-May-2021 13:39:18 UTC] Login fail umsi@umich.edu da6523a488577c99148969e5841908ae
+[27-May-2021 13:39:19 UTC] Login success umsi@umich.edu
+[27-May-2021 13:44:05 UTC] Login success nice@nice.com
