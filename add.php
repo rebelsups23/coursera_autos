@@ -1,40 +1,41 @@
 <?php
 session_start();
 if (!isset($_SESSION['name'])) {
-    die('Not logged in');
+    die('ACCESS DENIED');
 }
 if (isset($_POST['cancel'])) {
-    header("Location: view.php");
+    header("Location: index.php");
     return;
 }
 
 require_once 'pdo.php';
 
-if (isset($_POST['make']) && isset($_POST['year']) && isset($_POST['mileage'])) {
-    $make = htmlentities(trim($_POST['make']));
+if (isset($_POST['make']) && isset($_POST['year']) && isset($_POST['mileage']) && isset($_POST['model'])) {
+    $make = $_POST['make'];
     $year = $_POST['year'];
     $mileage = $_POST['mileage'];
+    $model = $_POST['model'];
 
+    if ($make === '' || $year === '' || $model === '' || $mileage === '') {
+        $_SESSION['error'] = 'All fields are required';
+        header("Location: add.php");
+        return;
+    }
     if (is_numeric($year) && is_numeric($mileage)) {
-        if ($make !== '') {
-            $stmt = $pdo->prepare('INSERT INTO autos
-                        (make, year, mileage) VALUES ( :mk, :yr, :mi)');
-            $stmt->execute(
-                array(
-                    ':mk' => $_POST['make'],
-                    ':yr' => $_POST['year'],
-                    ':mi' => $_POST['mileage']
-                )
-            );
+        $stmt = $pdo->prepare('INSERT INTO autos
+                    (make, year, model, mileage) VALUES ( :mk, :yr, :mo, :mi)');
+        $stmt->execute(
+            array(
+                ':mk' => $make,
+                ':yr' => $year,
+                ':mo' => $model,
+                ':mi' => $mileage,
+            )
+        );
 
-            $_SESSION['success'] = "Record inserted";
-            header("Location: view.php");
-            return;
-        } else {
-            $_SESSION['error'] = 'Make is required';
-            header("Location: add.php");
-            return;
-        }
+        $_SESSION['success'] = "Record added";
+        header("Location: index.php");
+        return;
     } else {
         $_SESSION['error'] = 'Mileage and year must be numeric';
         header("Location: add.php");
@@ -72,6 +73,7 @@ if (isset($_POST['make']) && isset($_POST['year']) && isset($_POST['mileage'])) 
             <form action="add.php" method="POST" class="space-y-5 mt-5">
                 <input type="text" class="w-full h-12 border border-gray-800 rounded px-3" name="make" placeholder="Make" />
                 <input class="w-full h-12 border border-gray-800 rounded px-3" name="year" placeholder="Year" />
+                <input class="w-full h-12 border border-gray-800 rounded px-3" name="model" placeholder="Model" />
                 <input class="w-full h-12 border border-gray-800 rounded px-3" name="mileage" placeholder="Mileage" />
                 <button type="submit" class="text-center w-full bg-blue-900 rounded-md text-white py-3 font-medium">Add</button>
             </form>

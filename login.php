@@ -4,7 +4,7 @@
         $email = trim($_POST['email']);
         $password = trim($_POST['pass']);
         if ($email == "" || $password == "" ) {
-            $_SESSION['error'] = "Email and password are required.";
+            $_SESSION['error'] = "User name and password are required.";
             header("Location: login.php");
             return;
         } elseif (strpos($email, "@") === false) {
@@ -20,7 +20,7 @@
         } else {
             error_log("Login success $email");
             $_SESSION['name'] = $email;
-            header("Location: view.php");
+            header("Location: index.php");
             return;
         }
     }

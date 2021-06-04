@@ -16,3 +16,99 @@
 [27-May-2021 13:39:18 UTC] Login fail umsi@umich.edu da6523a488577c99148969e5841908ae
 [27-May-2021 13:39:19 UTC] Login success umsi@umich.edu
 [27-May-2021 13:44:05 UTC] Login success nice@nice.com
+[03-Jun-2021 08:34:55 UTC] Login success nice@nice.com
+[03-Jun-2021 08:59:07 UTC] Login success nice@nice.com
+[03-Jun-2021 08:59:07 UTC] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home/sups/public_html/coursera_autos/view.php on line 2
+[03-Jun-2021 09:00:04 UTC] Login success nice@nice.com
+[03-Jun-2021 09:00:55 UTC] Login success nice@nice.com
+[03-Jun-2021 09:08:02 UTC] PHP Warning:  Undefined array key "autos_id" in /home/sups/public_html/coursera_autos/view.php on line 43
+[03-Jun-2021 09:08:02 UTC] PHP Warning:  Undefined array key "autos_id" in /home/sups/public_html/coursera_autos/view.php on line 44
+[03-Jun-2021 09:08:02 UTC] PHP Warning:  Undefined array key "autos_id" in /home/sups/public_html/coursera_autos/view.php on line 43
+[03-Jun-2021 09:08:02 UTC] PHP Warning:  Undefined array key "autos_id" in /home/sups/public_html/coursera_autos/view.php on line 44
+[03-Jun-2021 09:08:02 UTC] PHP Warning:  Undefined array key "autos_id" in /home/sups/public_html/coursera_autos/view.php on line 43
+[03-Jun-2021 09:08:02 UTC] PHP Warning:  Undefined array key "autos_id" in /home/sups/public_html/coursera_autos/view.php on line 44
+[03-Jun-2021 09:08:02 UTC] PHP Warning:  Undefined array key "autos_id" in /home/sups/public_html/coursera_autos/view.php on line 43
+[03-Jun-2021 09:08:02 UTC] PHP Warning:  Undefined array key "autos_id" in /home/sups/public_html/coursera_autos/view.php on line 44
+[03-Jun-2021 09:08:02 UTC] PHP Warning:  Undefined array key "autos_id" in /home/sups/public_html/coursera_autos/view.php on line 43
+[03-Jun-2021 09:08:02 UTC] PHP Warning:  Undefined array key "autos_id" in /home/sups/public_html/coursera_autos/view.php on line 44
+[03-Jun-2021 09:08:04 UTC] PHP Warning:  Undefined array key "autos_id" in /home/sups/public_html/coursera_autos/view.php on line 43
+[03-Jun-2021 09:08:04 UTC] PHP Warning:  Undefined array key "autos_id" in /home/sups/public_html/coursera_autos/view.php on line 44
+[03-Jun-2021 09:08:04 UTC] PHP Warning:  Undefined array key "autos_id" in /home/sups/public_html/coursera_autos/view.php on line 43
+[03-Jun-2021 09:08:04 UTC] PHP Warning:  Undefined array key "autos_id" in /home/sups/public_html/coursera_autos/view.php on line 44
+[03-Jun-2021 09:08:04 UTC] PHP Warning:  Undefined array key "autos_id" in /home/sups/public_html/coursera_autos/view.php on line 43
+[03-Jun-2021 09:08:04 UTC] PHP Warning:  Undefined array key "autos_id" in /home/sups/public_html/coursera_autos/view.php on line 44
+[03-Jun-2021 09:08:04 UTC] PHP Warning:  Undefined array key "autos_id" in /home/sups/public_html/coursera_autos/view.php on line 43
+[03-Jun-2021 09:08:04 UTC] PHP Warning:  Undefined array key "autos_id" in /home/sups/public_html/coursera_autos/view.php on line 44
+[03-Jun-2021 09:08:04 UTC] PHP Warning:  Undefined array key "autos_id" in /home/sups/public_html/coursera_autos/view.php on line 43
+[03-Jun-2021 09:08:04 UTC] PHP Warning:  Undefined array key "autos_id" in /home/sups/public_html/coursera_autos/view.php on line 44
+[04-Jun-2021 09:33:25 UTC] Login success nice@nice.com
+[04-Jun-2021 09:42:30 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'misc.autos' doesn't exist in /home/sups/public_html/coursera_autos/view.php:53
+Stack trace:
+#0 /home/sups/public_html/coursera_autos/view.php(53): PDO->query()
+#1 /home/sups/public_html/coursera_autos/index.php(4): include('...')
+#2 {main}
+  thrown in /home/sups/public_html/coursera_autos/view.php on line 53
+[04-Jun-2021 10:08:06 UTC] PHP Warning:  Undefined array key "auto_id" in /home/sups/public_html/coursera_autos/view.php on line 62
+[04-Jun-2021 10:08:06 UTC] PHP Warning:  Undefined array key "auto_id" in /home/sups/public_html/coursera_autos/view.php on line 63
+[04-Jun-2021 10:33:41 UTC] PHP Warning:  Undefined variable $row in /home/sups/public_html/coursera_autos/edit.php on line 87
+[04-Jun-2021 10:33:41 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/sups/public_html/coursera_autos/edit.php on line 87
+[04-Jun-2021 10:33:41 UTC] PHP Warning:  Undefined variable $row in /home/sups/public_html/coursera_autos/edit.php on line 88
+[04-Jun-2021 10:33:41 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/sups/public_html/coursera_autos/edit.php on line 88
+[04-Jun-2021 10:33:41 UTC] PHP Warning:  Undefined variable $row in /home/sups/public_html/coursera_autos/edit.php on line 89
+[04-Jun-2021 10:33:41 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/sups/public_html/coursera_autos/edit.php on line 89
+[04-Jun-2021 10:33:41 UTC] PHP Warning:  Undefined variable $row in /home/sups/public_html/coursera_autos/edit.php on line 90
+[04-Jun-2021 10:33:41 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/sups/public_html/coursera_autos/edit.php on line 90
+[04-Jun-2021 10:33:41 UTC] PHP Warning:  Undefined variable $row in /home/sups/public_html/coursera_autos/edit.php on line 91
+[04-Jun-2021 10:33:41 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/sups/public_html/coursera_autos/edit.php on line 91
+[04-Jun-2021 10:36:55 UTC] PHP Warning:  Undefined array key "autos_id" in /home/sups/public_html/coursera_autos/edit.php on line 50
+[04-Jun-2021 10:37:10 UTC] PHP Warning:  Undefined array key "autos_id" in /home/sups/public_html/coursera_autos/edit.php on line 50
+[04-Jun-2021 10:37:38 UTC] PHP Warning:  Undefined array key "autos_id" in /home/sups/public_html/coursera_autos/edit.php on line 50
+[04-Jun-2021 10:38:17 UTC] PHP Warning:  Undefined array key "autos_id" in /home/sups/public_html/coursera_autos/edit.php on line 50
+[04-Jun-2021 10:40:26 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /home/sups/public_html/coursera_autos/edit.php:35
+Stack trace:
+#0 /home/sups/public_html/coursera_autos/edit.php(35): PDOStatement->execute()
+#1 {main}
+  thrown in /home/sups/public_html/coursera_autos/edit.php on line 35
+[04-Jun-2021 10:42:39 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /home/sups/public_html/coursera_autos/edit.php:35
+Stack trace:
+#0 /home/sups/public_html/coursera_autos/edit.php(35): PDOStatement->execute()
+#1 {main}
+  thrown in /home/sups/public_html/coursera_autos/edit.php on line 35
+[04-Jun-2021 10:43:03 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /home/sups/public_html/coursera_autos/edit.php:35
+Stack trace:
+#0 /home/sups/public_html/coursera_autos/edit.php(35): PDOStatement->execute()
+#1 {main}
+  thrown in /home/sups/public_html/coursera_autos/edit.php on line 35
+[04-Jun-2021 10:43:10 UTC] PHP Warning:  Undefined array key "autos_id" in /home/sups/public_html/coursera_autos/edit.php on line 50
+[04-Jun-2021 10:43:31 UTC] PHP Warning:  Undefined array key "autos_id" in /home/sups/public_html/coursera_autos/edit.php on line 50
+[04-Jun-2021 10:45:22 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /home/sups/public_html/coursera_autos/edit.php:35
+Stack trace:
+#0 /home/sups/public_html/coursera_autos/edit.php(35): PDOStatement->execute()
+#1 {main}
+  thrown in /home/sups/public_html/coursera_autos/edit.php on line 35
+[04-Jun-2021 10:47:27 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /home/sups/public_html/coursera_autos/edit.php:35
+Stack trace:
+#0 /home/sups/public_html/coursera_autos/edit.php(35): PDOStatement->execute()
+#1 {main}
+  thrown in /home/sups/public_html/coursera_autos/edit.php on line 35
+[04-Jun-2021 10:47:56 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /home/sups/public_html/coursera_autos/edit.php:35
+Stack trace:
+#0 /home/sups/public_html/coursera_autos/edit.php(35): PDOStatement->execute()
+#1 {main}
+  thrown in /home/sups/public_html/coursera_autos/edit.php on line 35
+[04-Jun-2021 10:51:34 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /home/sups/public_html/coursera_autos/edit.php:37
+Stack trace:
+#0 /home/sups/public_html/coursera_autos/edit.php(37): PDOStatement->execute()
+#1 {main}
+  thrown in /home/sups/public_html/coursera_autos/edit.php on line 37
+[04-Jun-2021 10:52:14 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /home/sups/public_html/coursera_autos/edit.php:37
+Stack trace:
+#0 /home/sups/public_html/coursera_autos/edit.php(37): PDOStatement->execute()
+#1 {main}
+  thrown in /home/sups/public_html/coursera_autos/edit.php on line 37
+[04-Jun-2021 11:10:56 UTC] Login success umsi@umich.edu
+[04-Jun-2021 11:11:31 UTC] Login success umsi@umich.edu
+[04-Jun-2021 11:12:13 UTC] Login success umsi@umich.edu
+[04-Jun-2021 11:14:37 UTC] Login fail name@email.com 5fd8ecacf602a7436d73aa4b4ef155be
+[04-Jun-2021 11:15:03 UTC] Login fail name@email.com aa41efe0a1b3eeb9bf303e4561ff8392
+[04-Jun-2021 11:19:04 UTC] Login success name@email.com
